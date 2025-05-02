@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+  background-color: #121212; /* Dark background */
+  padding: 10px; /* Reduced padding for height adjustment */
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.task-input {
+  height: 30px;
+}
+
+.App-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  min-height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: #ffffff; /* Light text for contrast */
+}
+.App {
+  text-align: center;
+  background-color: rgb(59, 57, 55); /* Lighter background for better contrast */
+  padding-top: 80px; /* Add padding to prevent overlap with fixed header */
+  /* Adjust padding to ensure content is below the fixed header */
+height: 2px;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.task-input {
+  height: 30px;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row; /* Change to row for columns */
+  justify-content: space-around; /* Space out columns */
+  font-size: calc(10px + 2vmin);
+  color: #ffffff; /* Light text for contrast */
+}
+
+.task-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.column {
+  background-color: #1e1e1e; /* Darker column background */
+  border: 1px solid #444; /* Darker border */
+  border-radius: 8px;
+  padding: 10px;
+  width: 25%; /* Adjusted width for smaller blocks */
+  margin: 120px 10px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.task-card {
+  background: #2a2a2a; /* Dark gray background for task cards */
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Lighter shadow for contrast */
+  word-wrap: break-word; /* Ensure long text wraps */
+  overflow: hidden; /* Prevent overflow */
+  max-height: 100px; /* Set a maximum height for the task card */
+  overflow-x: auto; /* Enable vertical scrolling if content exceeds max height */
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #aaaaaa; /* Lighter gray for completed tasks */
+}
+
+button {
+  background-color: #007acc; /* Darker blue for buttons */
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+  background-color: #21a1f1;
+  transform: scale(1.05);
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #444; /* Darker border for input */
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.add-button {
+  height: 40px;
+}
